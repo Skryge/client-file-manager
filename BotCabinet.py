@@ -215,7 +215,7 @@ class BotCabinet:
 		df.sort_values(by="date", inplace=True)
 
 		#On exporte le tableau (toujours sous le même nom)
-		df.to_csv("C:\\Users\\tom_t\\Desktop\\Python Code\\Web Browser Automation\\Appli Cabinet Soler\\dossiers.csv", sep=";", index=False, encoding="utf-8-sig")
+		df.to_csv("YOUR_PATH\\dossiers.csv", sep=";", index=False, encoding="utf-8-sig")
 
 		#Pour faciliter la lecture, on crée le tableau contenant les dossiers n'ayant pas été traités depuis + d'1 mois
 		df_1_mois = df.loc[df.date < self.current_date - datetime.timedelta(30)]
